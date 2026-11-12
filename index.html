@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Struktury Spokoju · Mapa przeciążenia, pomiar wypalenia zawodowego</title>
+<meta name="description" content="Mapa przeciążenia: pomiar wypalenia zawodowego kwestionariuszem BAT-PL i dwie rozmowy o tym, co z niego wynika. Spotkania online, z Krakowa.">
+<meta property="og:title" content="Struktury Spokoju · Mapa przeciążenia">
+<meta property="og:description" content="Nie wiesz, czy to już wypalenie? Pomiar kwestionariuszem BAT-PL i dwie rozmowy o tym, co z niego wynika.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://strukturyspokoju.pl/">
+<meta property="og:image" content="https://strukturyspokoju.pl/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Struktury Spokoju · Mapa przeciążenia">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://strukturyspokoju.pl/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Montserrat:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0}
+a{color:#5D2E46}a:hover{color:#3E3B35}
+.wrap{max-width:1200px;margin:0 auto;padding:0 48px;box-sizing:border-box}
+.nav-links{display:flex;gap:32px;align-items:center}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.price{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.gets{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pricerow{display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.gora{background:#22211C;color:#EBE3D5}
+.gora .nl{color:#EBE3D5}.gora .nl:hover{color:#FFFFFF}
+.btn-l{color:#F5F1E8;border:1.5px solid rgba(245,241,232,.7)}.btn-l:hover{background:#F5F1E8;color:#22211C}
+.hero-ciemna{position:relative;min-height:700px;display:flex;align-items:center;overflow:hidden}
+.hero-ciemna>.wrap{width:100%}
+.hero-tekst{max-width:600px;padding:72px 0}
+.hero-foto{position:absolute;top:64px;right:6%;bottom:0;width:32%;background:#22211C;overflow:hidden}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.hero-mgla{position:absolute;inset:0;background:linear-gradient(90deg,#22211C 0%,rgba(34,33,28,0) 22%),linear-gradient(270deg,#22211C 0%,rgba(34,33,28,0) 18%),linear-gradient(0deg,#22211C 0%,rgba(34,33,28,0) 30%),linear-gradient(180deg,#22211C 0%,rgba(34,33,28,0) 14%)}
+.hero-podpis{position:absolute;right:24px;bottom:32px;text-align:right}
+.hero-podpis div{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:22px;color:#F5F1E8;line-height:1.2}
+.hero-podpis span{font-size:12.5px;color:#BFB3A0}
+.pytania{border-top:1px solid rgba(122,111,93,.35)}
+.pyt{border-bottom:1px solid rgba(122,111,93,.35)}
+.pyt summary{list-style:none;cursor:pointer;padding:16px 40px 16px 0;position:relative;font-weight:600;font-size:15.5px;color:#3E3B35;line-height:1.45}
+.pyt summary::-webkit-details-marker{display:none}
+.pyt summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:500;color:#5D2E46;line-height:1;transition:transform .2s}
+.pyt[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.pyt summary:hover{color:#5D2E46}
+.pyt summary:focus-visible{outline:2px solid #5D2E46;outline-offset:2px}
+.pyt p{margin:0 0 12px;font-size:15px;line-height:1.65}
+.pyt p:last-child{margin-bottom:18px}
+.po-co{margin:0 0 20px;max-width:520px}.po-co:last-child{margin-bottom:0}
+.po-co h3{margin:0 0 4px;font-size:16px;font-weight:600;color:#5D2E46;line-height:1.4}
+.po-co p{margin:0;font-size:15.5px;line-height:1.65}
+.dla-kogo-wstep{margin:0 0 8px;font-size:13px;font-weight:600;letter-spacing:.3px;color:#5F5646}
+.dla-kogo{list-style:none;margin:0 0 20px;padding:0;max-width:520px}
+.dla-kogo li{position:relative;padding:9px 0 9px 22px;border-bottom:1px solid rgba(122,111,93,.25);font-size:15.5px;line-height:1.55}
+.dla-kogo li::before{content:"";position:absolute;left:2px;top:17px;width:8px;height:8px;border-radius:50%;background:#5D2E46}
+.dla-kogo-koniec{margin:0;font-size:15.5px;font-weight:600;color:#5D2E46;max-width:520px}
+.trasa{position:relative;overflow:hidden}
+.trasa-tlo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35;pointer-events:none}
+.trasa-svg{display:block;width:100%;height:auto}
+.trasa-lista{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:24px;text-align:center}
+.trasa-lista h3{margin:0 0 6px;font-size:15px;font-weight:600;color:#3E3B35}
+.trasa-lista p{margin:0;font-size:14px;line-height:1.6}
+.trasa-lista .przerwa h3{color:#5D2E46;font-style:italic}
+.dostajesz{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.dostajesz-pozycja{border-top:1px solid rgba(235,227,213,.28);padding:14px 0}
+.dostajesz-pozycja.ostatnia{border-bottom:1px solid rgba(235,227,213,.28)}
+.dostajesz-pozycja>div{font-size:15px;font-weight:600;color:#F5F1E8}
+.dostajesz-pozycja p{margin:0;font-size:14.5px;color:#D9CDBB}
+.cena-wiersz{display:flex;align-items:center;gap:32px;margin-top:8px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(235,227,213,.28)}
+.kartka{margin:0;background:#FBF8F2;color:#3E3B35;border-radius:6px;padding:34px 38px 26px;box-shadow:0 24px 60px rgba(0,0,0,.28);transform:rotate(-1.2deg)}
+.kartka-gora{display:flex;justify-content:space-between;gap:12px;font-size:10.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#685E4D}
+.kartka-tytul{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;color:#5D2E46;margin:8px 0 20px;padding-bottom:12px;border-bottom:1px solid #E3D9C8}
+.pasek{margin:0 0 13px}
+.pasek .nazwa{margin-bottom:5px;font-size:13.5px}.pasek .nazwa b{font-weight:600}.pasek .nazwa i{font-size:11.5px;color:#7A6F5D}
+.pasek .tor{position:relative;height:11px;border-radius:6px}
+.pasek .kropka{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#3E3B35;border:3px solid #FBF8F2;box-sizing:border-box}
+.pasek.ogolny{border-top:1px solid #E3D9C8;padding-top:13px;margin-top:4px}.pasek.ogolny .nazwa{font-size:14.5px}.pasek.ogolny .tor{height:14px}
+.legenda{display:flex;gap:16px;font-size:11.5px;color:#685E4D;margin:6px 0 18px}
+.legenda span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.kartka-komentarz{margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1.4}
+.kartka-dol{border-top:1px solid #E3D9C8;padding-top:12px;font-size:13.5px;line-height:1.6}.kartka-dol strong{color:#5D2E46}
+.kartka figcaption{margin-top:14px;font-size:11px;color:#7A6F5D}
+.about{display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.4px;box-sizing:border-box}
+.btn-p{background:#5D2E46;color:#F5F1E8}.btn-p:hover{background:#3E3B35;color:#F5F1E8}
+.btn-g{color:#5D2E46;border:1.5px solid #5D2E46}.btn-g:hover{background:#5D2E46;color:#F5F1E8}
+.btn-w{background:#EBE3D5;color:#5D2E46}.btn-w:hover{background:#F5F1E8;color:#3E3B35}
+.nl{color:#3E3B35;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.3px}.nl:hover{color:#5D2E46}
+@media (max-width:960px){
+.hero,.two,.price,.about{grid-template-columns:1fr;gap:40px}
+.steps{grid-template-columns:1fr 1fr}
+.gets{grid-template-columns:1fr}
+.dostajesz{grid-template-columns:1fr;gap:48px}
+.hero-ciemna{display:block;min-height:0}
+.hero-tekst{padding:48px 0 8px}
+.hero-foto{position:relative;top:0;right:auto;width:100%;max-width:420px;height:440px;margin:0 auto}
+.hero-mgla{background:linear-gradient(180deg,#22211C 0%,rgba(34,33,28,0) 22%),linear-gradient(0deg,#22211C 0%,rgba(34,33,28,0) 25%)}
+.hero-podpis{right:20px;bottom:20px}
+.kartka{transform:none}
+.trasa-svg{display:none}
+.trasa-lista{grid-template-columns:1fr;text-align:left;gap:0;border-left:2px dotted #7A6F5D;margin-left:10px}
+.trasa-lista li{padding:0 0 22px 22px;position:relative}
+.trasa-lista li::before{content:"";position:absolute;left:-9px;top:5px;width:16px;height:16px;border-radius:50%;background:#5D2E46}
+.trasa-lista li.przerwa::before{background:#F5F1E8;border:2px dashed #5D2E46;box-sizing:border-box}
+.nav-links .nl{display:none}
+.about img{max-width:420px}
+}
+@media (max-width:560px){
+.wrap{padding:0 20px}
+.steps{grid-template-columns:1fr}
+.h1{font-size:46px !important}
+.h2{font-size:36px !important}
+.sec{padding-top:48px !important;padding-bottom:48px !important}
+.hero-art>div:first-child{padding:28px 24px 20px !important}
+.kartka{padding:24px 20px 20px}
+.kartka-gora span:last-child{display:none}
+.nav-links{display:none !important}
+.logo{font-size:18px !important;letter-spacing:3px !important}
+header .wrap{min-height:64px !important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Struktury Spokoju",
+  "url": "https://strukturyspokoju.pl/",
+  "email": "joanna@strukturyspokoju.pl",
+  "image": "https://strukturyspokoju.pl/og.jpg",
+  "description": "Pomiar wypalenia zawodowego zwalidowanym kwestionariuszem i rozmowy online o tym, co z niego wynika.",
+  "areaServed": "PL",
+  "address": {"@type": "PostalAddress", "addressLocality": "Kraków", "addressCountry": "PL"},
+  "founder": {"@type": "Person", "name": "Joanna Rębisz-Chochół", "jobTitle": "mgr psychologii"}
+}
+</script>
+</head>
+<body>
+<div style="background: #F5F1E8; color: #3E3B35; font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 1.7">
+
+<div class="gora">
+<header style="border-bottom: 1px solid rgba(245,241,232,.15); position: relative; z-index: 2">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 84px; flex-wrap: wrap">
+<a class="logo" href="/" style="text-decoration: none; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; color: #F5F1E8">Struktury Spokoju</a>
+<nav class="nav-links" aria-label="Główna">
+<a class="nl" href="#co-dostajesz">Mapa przeciążenia</a>
+<a class="nl" href="#jak">Jak to wygląda</a>
+<a class="nl" href="#o-mnie">O mnie</a>
+<a class="btn btn-w" href="https://cal.com/strukturyspokoju/rozmowa-wstepna" style="min-height: 44px; padding: 0 20px; font-size: 13px">Rozmowa wstępna</a>
+</nav>
+</div>
+</header>
+
+<section class="sec hero-ciemna" style="padding: 0">
+<div class="wrap" style="position: relative; z-index: 2">
+<div class="hero-tekst">
+<p style="margin: 0 0 6px; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 40px; line-height: 1.2; color: #BFB3A0">„Jakoś dociągnę do urlopu.”</p>
+<p style="margin: 0 0 36px; font-size: 13.5px; color: #A89C88">A po urlopie sił starcza na tydzień.</p>
+<h1 class="h1" style="margin: 0 0 26px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 76px; line-height: 1.02; color: #F5F1E8">Nie wiesz, czy to już wypalenie?</h1>
+<p style="margin: 0 0 36px; font-size: 18px; line-height: 1.7; color: #EBE3D5">Mapa przeciążenia to pomiar wypalenia zawodowego zwalidowanym kwestionariuszem i dwie rozmowy o tym, co z niego wynika. Spotkania odbywają się online.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center">
+<a class="btn btn-w" href="https://cal.com/strukturyspokoju/rozmowa-wstepna">Umów 15 minut rozmowy</a>
+<a class="btn btn-l" href="#jak">Zobacz, jak to wygląda</a>
+</div>
+<p style="margin: 16px 0 0; font-size: 13px; color: #A89C88">Rozmowa wstępna jest bez opłaty i bez zobowiązań.</p>
+</div>
+</div>
+<div class="hero-foto">
+<img src="asia-hero.jpg" width="900" height="1200" alt="Joanna Rębisz-Chochół">
+<div class="hero-mgla"></div>
+<div class="hero-podpis"><div>Joanna Rębisz-Chochół</div><span>mgr psychologii</span></div>
+</div>
+</section>
+</div>
+
+<section id="mapa" class="sec" style="background: #EBE3D5; padding: 80px 0">
+<div class="wrap two">
+<div>
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #5F5646; margin-bottom: 20px">Dla kogo</div>
+<p style="margin: 0 0 24px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; line-height: 1.3; color: #3E3B35">Dla osób, które pracują, ale od miesięcy robią to resztką sił.</p>
+<p class="dla-kogo-wstep">To może być o Tobie, jeśli:</p>
+<ul class="dla-kogo"><li>Rano potrzebujesz kilku budzików i sporo czasu, zanim w ogóle usiądziesz do pracy.</li><li>W pracy jakoś wszystko dowozisz, ale po pracy nie masz już siły nawet na to, co lubisz.</li><li>Weekend schodzi Ci na odsypianie, a w niedzielę wieczorem myślisz już o poniedziałku.</li><li>Kawę pijesz już nie dla smaku, tylko żeby dotrwać do końca dnia pracy.</li><li>Czytasz ten sam akapit trzeci raz i dalej nie wiesz, co w nim było.</li><li>Coraz częściej nazywasz siebie leniem, chociaż jeszcze niedawno nikt by tak o Tobie nie powiedział.</li><li>Po urlopie wracasz do pracy i po kilku dniach czujesz się tak samo jak przed nim.</li></ul>
+<p class="dla-kogo-koniec">Jeśli rozpoznajesz u siebie kilka z tych rzeczy, w Mapie sprawdzimy, skąd się biorą i co w Twoim tygodniu warto zmienić najpierw.</p>
+</div>
+<div>
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #5F5646; margin-bottom: 20px">Po co to sprawdzać</div>
+<p class="h2" style="margin: 0 0 24px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 44px; line-height: 1.1; color: #5D2E46">Żeby przestać zgadywać.</p>
+<div class="po-co"><h3>Zmęczenie przestaje wyglądać jak lenistwo.</h3><p>Większość osób, z którymi rozmawiałam, uważała, że po prostu sobie nie radzi albo jest leniwa. Wynik pokazuje, w których obszarach zmęczenie jest najsilniejsze. W rozmowie często okazuje się, że to reakcja na to, co dzieje się w pracy, a nie cecha charakteru.</p></div>
+<div class="po-co"><h3>Zobaczysz, ile naprawdę kosztuje Cię praca.</h3><p>W pracy zwykle wszystko jest zrobione na czas, więc z zewnątrz wygląda to dobrze. Koszt widać dopiero po pracy: wieczorem nie masz siły ugotować obiadu, odpisać znajomym albo usiąść do czegoś, co kiedyś sprawiało przyjemność.</p></div>
+<div class="po-co"><h3>Wychodzisz z jednym konkretnym krokiem.</h3><p>Na drugim spotkaniu ustalamy jedną zmianę w Twoim zwykłym tygodniu. Ma być mała, tak żeby dało się ją zrobić mimo zmęczenia.</p></div>
+<div class="po-co"><h3>Wcześniej zauważysz, że praca znowu zaczyna Cię przeciążać.</h3><p>Przeciążenie zwykle zaczyna się od drobiazgów: przestajesz gotować, coraz trudniej Ci zacząć dzień albo nie możesz się skupić nawet na tym, co lubisz. Razem nazywamy Twoje trzy sygnały ostrzegawcze i zapisujemy je w raporcie.</p></div>
+</div>
+</div>
+</section>
+
+<section id="jak" class="sec trasa" style="padding: 80px 0">
+<img class="trasa-tlo" src="warstwice.jpg" alt="" aria-hidden="true" loading="lazy">
+<div class="wrap" style="position: relative">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #685E4D; margin-bottom: 16px">Jak to wygląda</div>
+<h2 class="h2" style="margin: 0 0 40px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 52px; line-height: 1.08; color: #5D2E46">Trasa na dwa tygodnie</h2>
+<svg class="trasa-svg" viewBox="0 0 1104 140" role="img" aria-label="Pięć przystanków: kwestionariusz, pierwsze spotkanie, tydzień przerwy, drugie spotkanie, raport">
+<path d="M110,50 C220,50 220,90 331,90 S441,50 552,50 S662,90 773,90 S883,50 994,50" fill="none" stroke="#7A6F5D" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"></path>
+<g font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="600" text-anchor="middle">
+<circle cx="110" cy="50" r="26" fill="#5D2E46"></circle><text x="110" y="59" fill="#F5F1E8">1</text>
+<circle cx="331" cy="90" r="26" fill="#5D2E46"></circle><text x="331" y="99" fill="#F5F1E8">2</text>
+<circle cx="552" cy="50" r="24" fill="#F5F1E8" stroke="#5D2E46" stroke-width="2" stroke-dasharray="4 4"></circle><text x="552" y="57" fill="#5D2E46" font-size="16" font-style="italic">7 dni</text>
+<circle cx="773" cy="90" r="26" fill="#5D2E46"></circle><text x="773" y="99" fill="#F5F1E8">3</text>
+<circle cx="994" cy="50" r="26" fill="#5D2E46"></circle><text x="994" y="59" fill="#F5F1E8">4</text>
+</g>
+</svg>
+<ol class="trasa-lista">
+<li class=""><h3>Kwestionariusz online</h3><p>Odpowiadasz online na pytania o to, jak się czujesz w pracy i poza nią. Zajmie Ci to kilkanaście minut, najpóźniej dwa dni robocze przed pierwszym spotkaniem.</p></li>
+<li class=""><h3>Pierwsze spotkanie</h3><p>Przez 50 minut online rozmawiamy o Twoim wyniku i o tym, jak naprawdę wygląda Twój tydzień w pracy. Często już wtedy wychodzi coś, czego się nie spodziewasz.</p></li>
+<li class="przerwa"><h3>Tydzień przerwy</h3><p>Masz tydzień, żeby to, co wyszło na pierwszym spotkaniu, zobaczyć w swojej codziennej pracy.</p></li>
+<li class=""><h3>Drugie spotkanie</h3><p>Też trwa 50 minut. Wychodzisz z niego z jedną zmianą na najbliższe tygodnie i z listą swoich sygnałów ostrzegawczych.</p></li>
+<li class=""><h3>Raport na piśmie</h3><p>Dostajesz na piśmie swój wynik, pierwszy krok i trzy sygnały ostrzegawcze opisane Twoimi słowami. Możesz do niego wrócić za miesiąc albo za pół roku.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="co-dostajesz" class="sec" style="background: #5D2E46; color: #EBE3D5; padding: 80px 0">
+<div class="wrap dostajesz">
+<div>
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #D9CDBB; margin-bottom: 16px">Co dostajesz</div>
+<h2 class="h2" style="margin: 0 0 32px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #F5F1E8">Zobaczysz, na jakim etapie wyczerpania pracą jesteś i co możesz zmienić najpierw.</h2>
+<div class="cena-wiersz">
+<div>
+<div style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 60px; line-height: 1; color: #F5F1E8">390 zł</div>
+<div style="font-size: 13px; color: #D9CDBB; margin-top: 6px">do 30 listopada, potem 490 zł · przelew przed pierwszym spotkaniem</div>
+</div>
+<a class="btn btn-w" href="https://cal.com/strukturyspokoju/rozmowa-wstepna">Umów rozmowę wstępną</a>
+</div>
+</div>
+<figure class="kartka" aria-label="Przykładowa strona raportu">
+<div class="kartka-gora"><span>Raport z konsultacji · przykład</span><span>Struktury Spokoju</span></div>
+<div class="kartka-tytul">Twój wynik</div>
+<div class="pasek"><div class="nazwa"><b>Energia i regeneracja</b> <i>wyczerpanie</i></div><div class="tor" style="background:linear-gradient(90deg,#B9CBB3 0 51.5%,#E9C89B 51.5% 57.75%,#D9A3A3 57.75% 100%)"><span class="kropka" style="left:65%"></span></div></div>
+<div class="pasek"><div class="nazwa"><b>Skupienie i uwaga w pracy</b> <i>funkcjonowanie poznawcze</i></div><div class="tor" style="background:linear-gradient(90deg,#B9CBB3 0 42.5%,#E9C89B 42.5% 52.5%,#D9A3A3 52.5% 100%)"><span class="kropka" style="left:47.5%"></span></div></div>
+<div class="pasek"><div class="nazwa"><b>Reakcje emocjonalne w pracy</b> <i>funkcjonowanie emocjonalne</i></div><div class="tor" style="background:linear-gradient(90deg,#B9CBB3 0 32.5%,#E9C89B 32.5% 47.5%,#D9A3A3 47.5% 100%)"><span class="kropka" style="left:25%"></span></div></div>
+<div class="pasek"><div class="nazwa"><b>Stosunek do pracy</b> <i>opisowo, bez koloru</i></div><div class="tor" style="background:#E3DCD0"><span class="kropka" style="left:40%"></span></div></div>
+<div class="pasek ogolny"><div class="nazwa"><b>Wynik ogólny</b> <i>cztery skale razem</i></div><div class="tor" style="background:linear-gradient(90deg,#B9CBB3 0 39.75%,#E9C89B 39.75% 50.5%,#D9A3A3 50.5% 100%)"><span class="kropka" style="left:47%"></span></div></div>
+<div class="legenda"><span style="--c:#B9CBB3">zielona</span><span style="--c:#E9C89B">pomarańczowa</span><span style="--c:#D9A3A3">czerwona</span></div>
+<p class="kartka-komentarz">W odpowiedziach najmocniej widać wyczerpanie: energii po pracy zostaje najmniej. Skupienie jest w strefie pomarańczowej, reakcje emocjonalne mieszczą się w strefie zielonej.</p>
+<div class="kartka-dol">
+<div><strong>Od czego zaczynasz:</strong> wtorki bez spotkań po 15:00.</div>
+<div><strong>Twoje trzy sygnały:</strong> budzenie się przed piątą, kawa po szesnastej, odkładanie książek.</div>
+</div>
+<figcaption>Przykład. Wyniki i wpisy są zmyślone, progi stref prawdziwe.</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="dobrze-wiedziec" class="sec" style="background: #EBE3D5; padding: 72px 0">
+<div class="wrap two">
+<div>
+<h2 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.15; color: #5D2E46">Co po Mapie</h2>
+<p style="margin: 0; font-size: 15.5px">Raport zostaje u Ciebie i możesz z nim pracować samodzielnie. Jeśli wolisz nie robić tego w pojedynkę, możemy pracować dalej. Nazywam to Rusztowaniem, bo rusztowanie stawia się na czas, kiedy konstrukcja jeszcze sama nie stoi. To trzy spotkania co dwa tygodnie: na każdym sprawdzamy jedną zmianę w Twoim tygodniu pracy, a na koniec powtarzamy pomiar, żeby zobaczyć, czy wynik się zmienił. 690 zł.</p>
+</div>
+<div>
+<h2 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 34px; line-height: 1.15; color: #5D2E46">Pytania</h2>
+<div class="pytania">
+<details class="pyt"><summary>Wiem, że jestem wypalona albo wypalony. Po co mi pomiar?</summary><p>Bo „wypalenie” to jedno słowo na kilka różnych rzeczy. Pomiar pokazuje, w którym z czterech obszarów jest Ci teraz najtrudniej, a od tego zależy, co warto zmienić najpierw.</p><p>Masz też punkt odniesienia: za kilka miesięcy powtarzasz kwestionariusz i widzisz, czy wynik się zmienił. Czasem okazuje się również, że wypalenie nie tłumaczy wszystkiego. Lepiej dowiedzieć się o tym na początku.</p></details>
+<details class="pyt"><summary>Jestem w terapii. Czy to ma sens?</summary><p>Może mieć. W terapii zwykle patrzy się na całe życie. Mapa dotyczy tylko pracy, a wynik opiera się na zwalidowanym kwestionariuszu. Raport z wynikiem i Twoimi sygnałami możesz zabrać na sesję.</p><p>Dobrze, żeby osoba, która Cię prowadzi, o tym wiedziała. Jeśli właśnie zmienia się Twoje leczenie albo jesteś w trudniejszym momencie, z Mapą lepiej poczekać.</p></details>
+<details class="pyt"><summary>Czym to się różni od testu w internecie?</summary><p>Mapa opiera się na kwestionariuszu, którego używa się w badaniach naukowych nad wypaleniem. Ma polską adaptację, a progi stref pochodzą z opublikowanych badań.</p><p>Najważniejsze dzieje się jednak potem. Na dwóch spotkaniach sprawdzamy, czy wynik zgadza się z tym, jak naprawdę wygląda Twój tydzień. Potem ustalamy, co zrobić z wynikiem. Bez rozmowy z samego wyniku niewiele wiadomo.</p></details>
+<details class="pyt"><summary>Czy dostanę zaświadczenie albo zwolnienie?</summary><p>Nie. Mapa to nie terapia i nie wystawiam zwolnień, od tego jest lekarz. Raport jest dla Ciebie i nie zastąpi dokumentu dla lekarza czy pracodawcy.</p></details>
+<details class="pyt"><summary>A jeśli wynik wyjdzie wysoki?</summary><p>Nie zostajesz z nim sama ani sam. Na drugim spotkaniu ustalamy, jaki krok będzie dla Ciebie najlepszy, a ja zapisuję to w raporcie. Jeśli lepszym krokiem okaże się terapia albo wizyta u psychiatry, powiem to wprost i wskażę, gdzie szukać.</p></details>
+<details class="pyt"><summary>Jestem w kryzysie. Czy to dla mnie?</summary><p>Teraz nie. Zacznij od lekarza albo psychoterapeuty. Jeśli potrzebujesz rozmowy od razu, całodobowo działają linie 116 123 oraz 800 70 22 22, a przy bezpośrednim zagrożeniu życia 112.</p><p>Mapę robię z osobami, które teraz pracują.</p></details>
+</div>
+</div>
+</div>
+</section>
+
+<section id="o-mnie" class="sec" style="padding: 80px 0">
+<div class="wrap about">
+<img src="asia-portret-2.jpg" width="840" height="1050" loading="lazy" alt="Joanna Rębisz-Chochół" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 18px; background: #1E1C19">
+<div>
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #685E4D; margin-bottom: 16px">Kto prowadzi</div>
+<h2 class="h2" style="margin: 0 0 6px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 52px; line-height: 1.08; color: #5D2E46">Joanna Rębisz-Chochół</h2>
+<p style="margin: 0 0 32px; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 22px; color: #685E4D">mgr psychologii</p>
+<p style="margin: 0 0 16px; font-size: 17px; max-width: 600px">Przez kilkanaście lat pracowałam w korporacji, w planowaniu i analizach, więc przeciążenie w pracy znam nie tylko z badań, ale też z własnego kalendarza.</p>
+<p style="margin: 0 0 16px; font-size: 17px; max-width: 600px">Zanim zajęłam się psychologią, skończyłam informatykę i ekonometrię. Została mi po tym słabość do liczb i porządnych raportów, której nie zamierzam się pozbywać.</p>
+<p style="margin: 0 0 16px; font-size: 17px; max-width: 600px">Psychologię skończyłam z wyróżnieniem w 2026 roku. Pracę magisterską napisałam o wypaleniu u muzyków zawodowych, na tym samym kwestionariuszu, na którym pracuję teraz, a jego autorzy z KU Leuven zgodzili się, żebym używała go w swojej praktyce.</p>
+<p style="margin: 0; font-size: 17px; max-width: 600px">Mam też za sobą szkolenie coachingowe (159 godzin) i kurs coachingu kariery. Przydają się wtedy, gdy wynik jest już znany i trzeba ustalić, co z nim zrobić, tak żeby decyzje zostały Twoje, a nie moje.</p>
+</div>
+</div>
+</section>
+
+<section id="start" class="sec" style="padding: 0 0 80px">
+<div class="wrap">
+<div style="background: #EBE3D5; border-radius: 24px; padding: 72px 48px; text-align: center">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: #5F5646; margin-bottom: 16px">Jak zacząć</div>
+<h2 class="h2" style="margin: 0 auto 20px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 52px; line-height: 1.08; color: #5D2E46; max-width: 680px">Piętnaście minut wystarczy, żeby sprawdzić, czy Mapa jest dla Ciebie.</h2>
+<p style="margin: 0 auto 36px; font-size: 16px; max-width: 520px">Umów rozmowę wstępną albo napisz. Rozmowa jest bez opłaty i bez zobowiązań.</p>
+<div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap">
+<a class="btn btn-p" href="https://cal.com/strukturyspokoju/rozmowa-wstepna">Umów rozmowę wstępną</a>
+<a class="btn btn-g" href="mailto:joanna@strukturyspokoju.pl">joanna@strukturyspokoju.pl</a>
+</div>
+</div>
+<p style="margin: 48px 0 0; text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 30px; color: #5D2E46">Wracaj do siebie powoli.</p>
+</div>
+</section>
+
+<footer style="background: #3E3B35; color: #EBE3D5">
+<div class="wrap" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; min-height: 96px; padding-top: 24px; padding-bottom: 24px">
+<div style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 18px; letter-spacing: 4px; text-transform: uppercase">Struktury Spokoju</div>
+<div style="font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #D9CDBB">Online, z Krakowa · <a href="mailto:joanna@strukturyspokoju.pl" style="color: #EBE3D5">joanna@strukturyspokoju.pl</a> · <a href="polityka-prywatnosci.html" style="color: #EBE3D5">Prywatność</a></div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
