@@ -1,0 +1,1 @@
+# strukturyspokoju.github.io
